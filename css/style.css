@@ -4,14 +4,76 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
 body {
   width: 1920px;
   height: 1550px;
-  background: #000000;
-  /* margin: 0 auto; */
+  /* background: #000000; */
+  background: gray;
+}
+
+.container {
+  width: 1274px;
+  margin: 0 auto;
 }
 
 .header {
-  width: 1274px;
-  margin: 0 auto;
+  display: flex;
+  padding: 0 323px;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HBO-logo {
+  height: 36px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 470px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.menu-list {
+  display: inherit;
+  list-style: none;
+  gap: 43px;
+}
+
+.menu-list-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.btn {
+  width: 121px;
+  height: 40px;
+  background: #0059c1;
+  border-radius: 12px;
+  border: none;
+}
+
+.sign {
+  text-transform: uppercase;
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+
+.img-TLOU {
+  height: 100%;
 }
