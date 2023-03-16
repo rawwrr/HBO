@@ -12,12 +12,16 @@ html {
 body {
   width: 1920px;
   height: 1550px;
-  /* background: #000000; */
-  background: gray;
+  background: #000000;
+  /* background: gray; */
+}
+
+h2 {
+  color: #ffffff;
 }
 
 .container {
-  width: 1274px;
+  max-width: 1274px;
   margin: 0 auto;
 }
 
@@ -55,12 +59,13 @@ body {
   color: rgba(255, 255, 255, 0.75);
 }
 
-.btn {
+.btn-sign {
   width: 121px;
   height: 40px;
   background: #0059c1;
   border-radius: 12px;
   border: none;
+  cursor: pointer;
 }
 
 .sign {
@@ -74,6 +79,72 @@ body {
   color: #ffffff;
 }
 
-.img-TLOU {
+.img-tlou {
   height: 100%;
+  position: relative;
+  z-index: -3;
+}
+
+.logo-tlou {
+  position: absolute;
+  width: 658px;
+  left: 632px;
+  top: 432px;
+
+  z-index: -3;
+}
+
+.gradient {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.19%, #000000 100%);
+}
+
+.btn-play {
+  display: flex;
+  align-items: center;
+  position: absolute;
+
+  left: 862px;
+  top: 625px;
+}
+
+.btn-form {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2.5px);
+
+  border: none;
+  cursor: pointer;
+}
+
+.btn-icon {
+  position: absolute;
+  right: 30%;
+  top: 30%;
+}
+
+.btn-watch {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  padding-left: 10px;
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.list {
+  padding: 32px 0 81px 0;
+}
+
+.scroll {
+  display: flex;
+  padding-top: 24px;
+  gap: 24px;
+}
+
+.img-serial {
+  border-radius: 12px;
 }
