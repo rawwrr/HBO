@@ -16,7 +16,12 @@ body {
   /* background: gray; */
 }
 
+h1,
 h2 {
+  color: #ffffff;
+}
+
+.color-text {
   color: #ffffff;
 }
 
@@ -56,16 +61,21 @@ h2 {
 .menu-list-link {
   text-transform: uppercase;
   text-decoration: none;
+  line-height: 16px;
   color: rgba(255, 255, 255, 0.75);
+}
+
+.btn {
+  font-family: inherit;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-sign {
   width: 121px;
   height: 40px;
   background: #0059c1;
-  border-radius: 12px;
-  border: none;
-  cursor: pointer;
 }
 
 .sign {
@@ -75,8 +85,6 @@ h2 {
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-
-  color: #ffffff;
 }
 
 .img-tlou {
@@ -130,13 +138,14 @@ h2 {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 15px;
+  line-height: 18px;
   padding-left: 10px;
 
   color: rgba(255, 255, 255, 0.75);
 }
 
 .list {
-  padding: 32px 0 81px 0;
+  padding-top: 32px;
 }
 
 .scroll {
@@ -147,4 +156,115 @@ h2 {
 
 .img-serial {
   border-radius: 12px;
+}
+
+.section-cta {
+  padding: 81px 0 32px 0;
+}
+
+.heading-secondary {
+  margin-bottom: 24px;
+}
+
+.cta-cards {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta-box {
+  position: absolute;
+  z-index: 5;
+  width: 502px;
+  height: 296px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 89, 193, 0.5) 0%,
+    rgba(13, 0, 123, 0.5) 100%
+  );
+  border: 1px solid rgba(0, 89, 193, 0.5);
+  border-radius: 12px;
+
+  transition: all 0.8s;
+  opacity: 1;
+}
+
+.cta-box:hover {
+  z-index: 10;
+}
+
+.cta-cards:hover .cta-box:not(:hover) {
+  opacity: 0.1;
+}
+
+.cta-box-1 {
+  left: 0;
+}
+
+.cta-box-2 {
+  left: 30%;
+}
+
+.cta-box-3 {
+  right: 0;
+}
+
+.cta-content {
+  padding: 32px;
+}
+
+.heading-primary {
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.list-item {
+  padding-top: 35px;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.item {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.item:nth-child(3) {
+  margin-bottom: 32px;
+}
+
+.btn-cta {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buy {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.trial {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.btn-buy {
+  background: #e38b00;
+  width: 147px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.btn-trial {
+  background-color: transparent;
+  box-shadow: 0 0 0 1px #e38b00;
+  width: 147px;
+  height: 40px;
 }
