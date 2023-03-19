@@ -76,12 +76,9 @@ h2 {
   width: 121px;
   height: 40px;
   background: #0059c1;
-}
-
-.sign {
+  font-family: inherit;
   text-transform: uppercase;
   text-decoration: none;
-
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
@@ -156,57 +153,38 @@ h2 {
 }
 
 #scroll-bar::-webkit-scrollbar {
-  width: 0;
+  /* width: 0; */
+  height: 0;
 }
 
 .serial-1 {
   position: relative;
 }
 
-/* .serial-1:hover > div {
-  position: absolute;
-} */
-
-.serial-1:hover {
-  border-radius: 12px;
-  top: 0;
-  backdrop-filter: blur(5px);
-  visibility: visible;
-  transform: translate(0);
+.serial-1:hover .description {
   opacity: 1;
 }
 
 .img-serial {
   border-radius: 12px;
-  cursor: pointer;
 }
 
 .description {
+  position: absolute;
+  top: 0;
+
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+
   height: 100%;
   display: flex;
   flex-direction: column;
-  position: absolute;
   justify-content: center;
   padding: 0 15px 0;
 
   opacity: 0;
-  visibility: hidden;
-  transform: translate(0, -100%);
-
-  transition: all 0.4s;
-
-  /* z-index: 3; */
+  transition: all 0.3s ease-in-out;
 }
-
-/* .description:hover {
-  border-radius: 12px;
-  top: 0;
-  backdrop-filter: blur(5px);
-  visibility: visible;
-  transform: translate(0);
-
-  opacity: 1;
-} */
 
 .score {
   display: flex;
@@ -293,15 +271,16 @@ h2 {
 
 .cta-cards {
   position: relative;
-  display: flex;
-  justify-content: space-between;
 }
 
 .cta-box {
   position: absolute;
-  z-index: 5;
+  /* top: 0; */
   width: 502px;
   height: 296px;
+  z-index: 5;
+  transform: scale(0.75);
+
   background: linear-gradient(
     90deg,
     rgba(0, 89, 193, 0.5) 0%,
@@ -316,6 +295,7 @@ h2 {
 
 .cta-box:hover {
   z-index: 10;
+  transform: scale(1);
 }
 
 .cta-cards:hover .cta-box:not(:hover) {
@@ -327,7 +307,7 @@ h2 {
 }
 
 .cta-box-2 {
-  left: 30%;
+  left: 30.3%;
 }
 
 .cta-box-3 {
