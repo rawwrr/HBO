@@ -13,15 +13,6 @@ body {
   width: 1920px;
   height: 1550px;
   background: #000000;
-  /* background: gray; */
-}
-
-h1,
-h2 {
-  color: #ffffff;
-}
-
-.color-text {
   color: #ffffff;
 }
 
@@ -65,11 +56,16 @@ h2 {
   color: rgba(255, 255, 255, 0.75);
 }
 
+.menu-list-link:hover {
+  color: #ffffff;
+}
+
 .btn {
   font-family: inherit;
   border-radius: 12px;
   border: none;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .btn-sign {
@@ -82,6 +78,13 @@ h2 {
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
+}
+
+.btn-sign:hover {
+  background: rgba(0, 90, 193, 0.894);
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
 }
 
 .img-tlou {
@@ -125,6 +128,15 @@ h2 {
   cursor: pointer;
 }
 
+.btn-form {
+  transform: scale(1);
+}
+
+.btn-form:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
+
 .btn-icon {
   position: absolute;
   right: 30%;
@@ -141,20 +153,26 @@ h2 {
   color: rgba(255, 255, 255, 0.75);
 }
 
+.btn-watch:hover {
+  color: #ffffff;
+}
+
 .list {
   padding-top: 32px;
 }
 
+.container h2 {
+  padding-bottom: 24px;
+}
+
 .scroll {
   display: flex;
-  padding-top: 24px;
   gap: 24px;
   overflow-x: scroll;
 }
 
 #scroll-bar::-webkit-scrollbar {
-  /* width: 0; */
-  height: 0;
+  display: none;
 }
 
 .serial-1 {
@@ -163,6 +181,12 @@ h2 {
 
 .serial-1:hover .description {
   opacity: 1;
+  cursor: grab;
+}
+
+.serial-1:active .description {
+  /* opacity: 1; */
+  cursor: grabbing;
 }
 
 .img-serial {
@@ -261,6 +285,13 @@ h2 {
   width: 14px;
 }
 
+.watch:hover {
+  background-color: rgba(0, 90, 193, 0.894);
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
+}
+
 .section-cta {
   padding: 81px 0 32px 0;
 }
@@ -299,7 +330,7 @@ h2 {
 }
 
 .cta-cards:hover .cta-box:not(:hover) {
-  opacity: 0.1;
+  opacity: 0.08;
 }
 
 .cta-box-1 {
@@ -346,25 +377,22 @@ h2 {
   justify-content: flex-end;
 }
 
-.buy {
+.btn-buy {
+  background: #e38b00;
+  width: 147px;
+  height: 40px;
+  margin-right: 10px;
+
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
 }
 
-.trial {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-.btn-buy {
-  background: #e38b00;
-  width: 147px;
-  height: 40px;
-  margin-right: 10px;
+.btn-buy:hover {
+  background-color: transparent;
+  box-shadow: 0 0 0 1px #e38b00;
+  transition: all 0.2s;
 }
 
 .btn-trial {
@@ -372,4 +400,14 @@ h2 {
   box-shadow: 0 0 0 1px #e38b00;
   width: 147px;
   height: 40px;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.btn-trial:hover {
+  background: #e38b00;
+  transition: all 0.2s;
 }
