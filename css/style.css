@@ -86,18 +86,14 @@ body {
   box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
 }
 
-.container_gradient {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.19%, #000000 100%);
-}
-
 .hero {
   position: relative;
 }
 
 .hero__img {
+  width: 1274px;
   height: 595px;
   background-repeat: no-repeat;
-  z-index: 0;
 }
 
 .hero__logo {
@@ -128,50 +124,45 @@ body {
   background: #e3b100;
 }
 
-.btn-play {
+.hero__btn {
   position: absolute;
-  left: 862px;
-  top: 625px;
+  left: 50%;
+  transform: translate(-50%);
+  top: 535px;
 }
 
-.btn-play__form {
-  display: flex;
+.hero__btn-form {
   background: transparent;
-  align-items: center;
   border: none;
+  font-family: inherit;
 }
 
-.btn-form__play {
+.hero__btn-play {
   position: relative;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2.5px);
-
-  border: none;
-  cursor: pointer;
 }
 
-/* .btn-form {
-  transform: scale(1);
-}
-
-.btn-form:hover {
-  transform: scale(1.1);
-  transition: all 0.4s ease-in-out;
-} */
-
-.btn-icon {
+.hero__btn-play_svg {
   position: absolute;
-  right: 30%;
-  top: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  width: 20px;
+  color: #ffffff;
 }
 
-.btn-form__watch {
-  text-transform: uppercase;
+.hero__btn-link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
+}
+
+.hero__btn-text {
+  text-transform: uppercase;
   font-size: 15px;
   line-height: 18px;
   padding-left: 10px;
@@ -179,7 +170,7 @@ body {
   color: rgba(255, 255, 255, 0.75);
 }
 
-.btn-form__watch:hover {
+.hero__btn-text:hover {
   color: #ffffff;
 }
 

@@ -53,12 +53,20 @@
       </header>
     </div>
 
-    <div class="container container_gradient">
+    <div class="container">
       <section class="hero">
         <div
           class="hero__img"
-          style="background-image: url(./img/TLOU.png)"
+          style="
+            background-image: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0) 63.19%,
+                #000000 100%
+              ),
+              url(./img/TLOU.png);
+          "
         ></div>
+
         <div
           class="hero__logo"
           style="background-image: url(./img/logo/The_Last_of_Us_logo.png)"
@@ -68,16 +76,26 @@
           <div class="hero__sliders-slider"></div>
         </div>
 
-        <div class="btn-play">
-          <button class="btn-play__form">
-            <div class="btn-form__play">
-              <img
-                src="./img/icon/Icon-Color.png"
-                class="btn-icon"
-                alt="icon play button"
-              />
-            </div>
-            <a href="#" class="btn-form__watch">watch the trailer</a>
+        <div class="hero__btn">
+          <button href="#" class="hero__btn-form">
+            <a href="#" class="hero__btn-link">
+              <div class="hero__btn-play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6 hero__btn-play_svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+
+              <span class="hero__btn-text"> watch the trailer </span>
+            </a>
           </button>
         </div>
       </section>
