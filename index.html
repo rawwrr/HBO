@@ -27,147 +27,160 @@
   </head>
 
   <body>
-    <header class="header">
-      <a href="#">
-        <img src="./img/logo/HBO.png" class="HBO-logo" alt="logo HBO"
-      /></a>
-      <nav class="menu">
-        <ul class="menu-list">
-          <li><a href="#" class="menu-list-link">series</a></li>
-          <li><a href="#" class="menu-list-link">movies</a></li>
-        </ul>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">
+          <a href="/">
+            <img
+              src="./img/logo/HBO.png"
+              class="header__logo-img"
+              alt="logo HBO"
+          /></a>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li><a href="#" class="main-nav__list-link">series</a></li>
+            <li><a href="#" class="main-nav__list-link">movies</a></li>
+          </ul>
 
-        <ul class="menu-list">
-          <li><a href="#" class="menu-list-link">free episodes</a></li>
-          <li><a href="#" class="menu-list-link">schedule</a></li>
-        </ul>
-      </nav>
+          <ul class="main-nav__list">
+            <li><a href="#" class="main-nav__list-link">free episodes</a></li>
+            <li><a href="#" class="main-nav__list-link">schedule</a></li>
+          </ul>
+        </nav>
 
-      <button class="btn btn-sign">sign in</button>
-    </header>
+        <button class="btn btn-sign">sign in</button>
+      </header>
+    </div>
 
-    <div class="container gradient">
-      <img src="./img/TLOU.png" class="img-tlou" alt="Series The Last Of Us" />
+    <div class="container container_gradient">
+      <section class="hero">
+        <div
+          class="hero__img"
+          style="background-image: url(./img/TLOU.png)"
+        ></div>
+        <div
+          class="hero__logo"
+          style="background-image: url(./img/logo/The_Last_of_Us_logo.png)"
+        ></div>
 
-      <img
-        src="./img/logo/The_Last_of_Us_logo 1.png"
-        class="logo-tlou"
-        alt="Logo series TLOU"
-      />
+        <div class="hero__sliders">
+          <div class="hero__sliders-slider"></div>
+        </div>
 
-      <div class="btn-play">
-        <button class="btn-form">
-          <img
-            src="./img/icon/Icon-Color.png"
-            class="btn-icon"
-            alt="icon play button"
-          />
-        </button>
-        <a href="#" class="btn-watch">watch the trailer</a>
-      </div>
+        <div class="btn-play">
+          <button class="btn-play__form">
+            <div class="btn-form__play">
+              <img
+                src="./img/icon/Icon-Color.png"
+                class="btn-icon"
+                alt="icon play button"
+              />
+            </div>
+            <a href="#" class="btn-form__watch">watch the trailer</a>
+          </button>
+        </div>
+      </section>
     </div>
 
     <section class="list">
-      <div class="container">
-        <h2>HBO Original</h2>
-        <div class="scroll" id="scroll-bar">
-          <div class="serial-1">
-            <img
-              class="img-serial"
-              src="./img/posters/house_of_the_dragon.jpg"
-              alt="very cool series"
-            />
+      <h2>HBO Original</h2>
+      <div class="scroll" id="scroll-bar">
+        <div class="serial-1">
+          <img
+            class="img-serial"
+            src="./img/posters/house_of_the_dragon.jpg"
+            alt="very cool series"
+          />
 
-            <div class="description">
-              <div class="score">
-                <a href="#" class="mark">
+          <div class="description">
+            <div class="score">
+              <a href="#" class="mark">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="w-5 h-5 icon-star"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                8.1
+              </a>
+              <p>2022</p>
+            </div>
+
+            <div class="about">
+              <h5>Season 1</h5>
+              <h4>House of the Dragon</h4>
+              <p>
+                An internal succession war within House Targaryen at the height
+                of its power, 172 years before the birth of Daenerys Targaryen.
+              </p>
+
+              <div class="btn-hotd">
+                <a href="#" class="watch">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    class="w-5 h-5 icon-star"
+                    class="w-5 h-5 watch-play"
                   >
                     <path
-                      fill-rule="evenodd"
-                      d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                      clip-rule="evenodd"
+                      d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"
                     />
                   </svg>
-                  8.1
+                  watch
                 </a>
-                <p>2022</p>
-              </div>
-
-              <div class="about">
-                <h5>Season 1</h5>
-                <h4>House of the Dragon</h4>
-                <p>
-                  An internal succession war within House Targaryen at the
-                  height of its power, 172 years before the birth of Daenerys
-                  Targaryen.
-                </p>
-
-                <div class="btn-hotd">
-                  <a href="#" class="watch">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      class="w-5 h-5 watch-play"
-                    >
-                      <path
-                        d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"
-                      />
-                    </svg>
-                    watch
-                  </a>
-                </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="serial-2">
-            <img
-              class="img-serial"
-              src="./img/posters/GOT.jpg"
-              alt="very cool series"
-            />
-          </div>
-          <div class="serial-3">
-            <img
-              class="img-serial"
-              src="./img/posters/true_detective.jpg"
-              alt="very cool series"
-            />
-          </div>
-          <div class="serial-4">
-            <img
-              class="img-serial"
-              src="./img/posters/silicon_valley.jpg"
-              alt="very cool series"
-            />
-          </div>
-          <div class="serial-5">
-            <img
-              class="img-serial"
-              src="./img/posters/peacemaker.jpg"
-              alt="very cool series"
-            />
-          </div>
-          <div class="serial-6">
-            <img
-              class="img-serial"
-              src="./img/posters/mare_easttown.jpg"
-              alt="very cool series"
-            />
-          </div>
-          <div class="serial-7">
-            <img
-              class="img-serial"
-              src="./img/posters/house_of_the_dragon.jpg"
-              alt="very cool series"
-            />
-          </div>
+        <div class="serial-2">
+          <img
+            class="img-serial"
+            src="./img/posters/GOT.jpg"
+            alt="very cool series"
+          />
+        </div>
+        <div class="serial-3">
+          <img
+            class="img-serial"
+            src="./img/posters/true_detective.jpg"
+            alt="very cool series"
+          />
+        </div>
+        <div class="serial-4">
+          <img
+            class="img-serial"
+            src="./img/posters/silicon_valley.jpg"
+            alt="very cool series"
+          />
+        </div>
+        <div class="serial-5">
+          <img
+            class="img-serial"
+            src="./img/posters/peacemaker.jpg"
+            alt="very cool series"
+          />
+        </div>
+        <div class="serial-6">
+          <img
+            class="img-serial"
+            src="./img/posters/mare_easttown.jpg"
+            alt="very cool series"
+          />
+        </div>
+        <div class="serial-7">
+          <img
+            class="img-serial"
+            src="./img/posters/house_of_the_dragon.jpg"
+            alt="very cool series"
+          />
         </div>
       </div>
     </section>

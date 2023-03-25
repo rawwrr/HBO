@@ -10,10 +10,9 @@ html {
 }
 
 body {
-  width: 1920px;
-  height: 1550px;
   background: #000000;
   color: #ffffff;
+  /* overflow-x: hidden; */
 }
 
 .container {
@@ -23,17 +22,17 @@ body {
 
 .header {
   display: flex;
-  padding: 0 323px;
+
   height: 90px;
   justify-content: space-between;
   align-items: center;
 }
 
-.HBO-logo {
+.header__logo-img {
   height: 36px;
 }
 
-.menu {
+.main-nav {
   display: flex;
   justify-content: space-between;
   width: 470px;
@@ -43,20 +42,20 @@ body {
   line-height: 16px;
 }
 
-.menu-list {
+.main-nav__list {
   display: inherit;
   list-style: none;
   gap: 43px;
 }
 
-.menu-list-link {
+.main-nav__list-link {
   text-transform: uppercase;
   text-decoration: none;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.75);
 }
 
-.menu-list-link:hover {
+.main-nav__list-link:hover {
   color: #ffffff;
 }
 
@@ -87,35 +86,62 @@ body {
   box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
 }
 
-.img-tlou {
-  height: 100%;
-  position: relative;
-  z-index: -3;
-}
-
-.logo-tlou {
-  position: absolute;
-  width: 658px;
-  left: 632px;
-  top: 432px;
-
-  z-index: -3;
-}
-
-.gradient {
+.container_gradient {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.19%, #000000 100%);
 }
 
-.btn-play {
-  display: flex;
-  align-items: center;
-  position: absolute;
+.hero {
+  position: relative;
+}
 
+.hero__img {
+  height: 595px;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.hero__logo {
+  position: absolute;
+  width: 658px;
+  height: 143px;
+  left: 50%;
+  top: 342px;
+  transform: translate(-50%);
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.hero__sliders {
+  position: absolute;
+  width: 500px;
+  height: 1px;
+  top: 514px;
+  left: 50%;
+  transform: translate(-50%);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.hero__sliders-slider {
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: #e3b100;
+}
+
+.btn-play {
+  position: absolute;
   left: 862px;
   top: 625px;
 }
 
-.btn-form {
+.btn-play__form {
+  display: flex;
+  background: transparent;
+  align-items: center;
+  border: none;
+}
+
+.btn-form__play {
   position: relative;
   width: 40px;
   height: 40px;
@@ -128,14 +154,14 @@ body {
   cursor: pointer;
 }
 
-.btn-form {
+/* .btn-form {
   transform: scale(1);
 }
 
 .btn-form:hover {
   transform: scale(1.1);
   transition: all 0.4s ease-in-out;
-}
+} */
 
 .btn-icon {
   position: absolute;
@@ -143,7 +169,7 @@ body {
   top: 30%;
 }
 
-.btn-watch {
+.btn-form__watch {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 15px;
@@ -153,15 +179,16 @@ body {
   color: rgba(255, 255, 255, 0.75);
 }
 
-.btn-watch:hover {
+.btn-form__watch:hover {
   color: #ffffff;
 }
 
 .list {
   padding-top: 32px;
+  padding-left: 324px;
 }
 
-.container h2 {
+.list h2 {
   padding-bottom: 24px;
 }
 
