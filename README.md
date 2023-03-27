@@ -1,3 +1,7 @@
-# Homework
+# Homework (=^･ω･^=)
 
-> HBO: [wow! this is a great site](https://rawwrr.github.io/HBO/)
+```
+(ﾐචᆽචﾐ)
+```
+
+> (=^・ω・^)ﾉ ☆ ＝＝[wow! this is a great site](https://rawwrr.github.io/HBO/) ＝＝ ☆ (≈චᆽච≈)
