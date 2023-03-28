@@ -20,6 +20,10 @@ body {
   margin: 0 auto;
 }
 
+.heading-primary {
+  display: none;
+}
+
 /* SECTION HEADER */
 .header {
   display: flex;
@@ -211,7 +215,7 @@ body {
   position: relative;
 }
 
-.serial {
+.series {
   width: 210px;
   height: 300px;
   border-radius: 12px;
@@ -228,13 +232,15 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
   top: 0;
   width: 210px;
   height: 300px;
   border-radius: 12px;
+  padding: 20px;
+
   backdrop-filter: blur(5px);
-  justify-content: center;
-  padding: 0 20px 0;
 
   opacity: 0;
   transition: all 0.3s ease-in-out;
@@ -268,12 +274,12 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.about {
+.info {
   display: flex;
   flex-direction: column;
 }
 
-.about h3 {
+.info-season {
   margin-top: 56px;
   font-weight: 500;
   font-size: 14px;
@@ -281,14 +287,15 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.about h4 {
+.info h4 {
+  font-weight: 900;
   margin-top: 7px;
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
 }
 
-.about p {
+.info-description {
   margin-top: 6px;
   margin-bottom: 48px;
   font-weight: 400;
@@ -388,7 +395,7 @@ body {
   right: 0;
 }
 
-.heading-primary {
+.heading-tertiary {
   text-align: center;
   font-size: 30px;
   line-height: 36px;
