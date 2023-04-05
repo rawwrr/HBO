@@ -73,12 +73,18 @@ body {
 }
 
 .btn-sign {
-  width: 121px;
-  height: 40px;
+  display: inline-block;
+
+  padding: 11px 33.56px;
   background: #0059c1;
+  color: #ffffff;
+
   font-family: inherit;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
+  border-radius: 12px;
+
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
