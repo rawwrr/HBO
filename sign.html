@@ -26,36 +26,146 @@
     <title>HBO</title>
   </head>
 
-  <body">
+  <body>
     <div class="container">
       <div class="bg-img" style="background-image: url(./img/bg_HBO.png)">
-        
-      <header class="header">
-        <h1 class="heading-primary">HBO</h1>
-        <div class="header__logo">
-          <a href="/">
-            <img
-              src="./img/logo/HBO.png"
-              class="header__logo-img"
-              alt="logo HBO"
-          /></a>
-        </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li><a href="#" class="main-nav__link">series</a></li>
-            <li><a href="#" class="main-nav__link">movies</a></li>
-          </ul>
+        <header class="header">
+          <h1 class="heading-primary">HBO</h1>
+          <div class="header__logo">
+            <a href="/">
+              <img
+                src="./img/logo/HBO.png"
+                class="header__logo-img"
+                alt="logo HBO"
+            /></a>
+          </div>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li><a href="#" class="main-nav__link">series</a></li>
+              <li><a href="#" class="main-nav__link">movies</a></li>
+            </ul>
 
-          <ul class="main-nav__list">
-            <li><a href="#" class="main-nav__link">free episodes</a></li>
-            <li><a href="#" class="main-nav__link">schedule</a></li>
-          </ul>
-        </nav>
+            <ul class="main-nav__list">
+              <li><a href="#" class="main-nav__link">free episodes</a></li>
+              <li><a href="#" class="main-nav__link">schedule</a></li>
+            </ul>
+          </nav>
 
-        <a href="./sign.html" class="btn-sign" target="_blank">sign in</a>
-      </header>
+          <a href="./sign.html" class="btn-sign" target="_blank">sign in</a>
+        </header>
 
-      <section></section>
+        <section class="subscriptions">
+          <div class="pricing-plan">
+            <div class="pricing-plan__info">
+              <h1>sign up</h1>
+              <p>Choose your HBO Max plan</p>
+            </div>
+            <div class="pricing-plan__cards">
+              <!-- 1 -->
+              <div class="pricing-plan__box">
+                <div class="pricing-plan__content">
+                  <div class="pricing-plan__title">
+                    <h4>Monthly</h4>
+                    <p>7.99$/mo</p>
+                  </div>
+                  <div class="pricing-plan__description">
+                    <p>You can opt out at any time.</p>
+                  </div>
+                </div>
+
+                <div class="pricing-plan__btn">
+                  <button class="btn pricing-plan__btn-buy">Choose</button>
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div class="pricing-plan__box">
+                <div class="pricing-plan__content">
+                  <div class="pricing-plan__title">
+                    <h4>Annual</h4>
+                    <p>71.99$/year</p>
+                  </div>
+                  <div class="pricing-plan__description">
+                    <p>
+                      If you pay for 12 months in advance, this corresponds to a
+                      price of only PLN 5.99/month.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="pricing-plan__btn">
+                  <button class="btn pricing-plan__btn-buy">Choose</button>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </section>
+
+        <section class="form">
+          <div class="cta-title">
+            <p>Create an account</p>
+          </div>
+          <form action="cta-form" name="sign-up">
+            <div class="cta-form__full-name">
+              <!-- first name -->
+              <div>
+                <label class="cta-form__label" for="first-name"></label>
+                <input
+                  class="cta-form__input"
+                  type="first-name"
+                  type="text"
+                  placeholder="Your first name"
+                  name="first-name"
+                  required
+                />
+              </div>
+
+              <!-- last name -->
+              <div>
+                <label class="cta-form__label" for="last-name"></label>
+                <input
+                  class="cta-form__input"
+                  type="last-name"
+                  type="text"
+                  placeholder="Your last name"
+                  name="last-name"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- email -->
+            <div>
+              <label
+                class="cta-form__label cta-form__label-email"
+                for="email"
+              ></label>
+              <input
+                class="cta-form__input cta-form__input-email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+              />
+            </div>
+
+            <!-- password -->
+            <div>
+              <label
+                class="cta-form__label cta-form__label-pass"
+                for="password"
+              ></label>
+              <input
+                class="cta-form__input cta-form__input-pass"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+            </div>
+          </form>
+        </section>
       </div>
     </div>
   </body>
