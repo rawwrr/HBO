@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.bg-img {
+  width: 1920px;
+  height: 932px;
+  /* margin: 0 auto; */
+  /* backgr ound: rgb(0, 0, 0); */
+  /* opacity: 0.1; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading-primary {
+  display: none;
+}
+
+/* SECTION HEADER */
+.header {
+  display: flex;
+  padding: 24px 322px 51px 322px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  height: 40px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 470px;
+}
+
+.main-nav__list {
+  display: inherit;
+  list-style: none;
+  gap: 43px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.main-nav__list:last-child {
+  gap: 59px;
+}
+
+.main-nav__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.main-nav__link:hover {
+  color: #ffffff;
+}
+
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.btn-sign {
+  display: inline-block;
+
+  padding: 11px 33.56px;
+  background: #0059c1;
+  color: #ffffff;
+
+  font-family: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 12px;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.btn-sign:hover {
+  background: rgba(0, 90, 193, 0.894);
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
+}
+
+/* SECTION PRICING-PLAN */
+
+.pricing-plan__info {
+  padding: 0 811px 32px 811px;
+  text-align: center;
+}
+
+.pricing-plan__info h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.pricing-plan__info p {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.pricing-plan__cards {
+  display: flex;
+  /* justify-content: space-between; */
+  column-gap: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-plan__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 502px;
+  height: 250px;
+  padding: 32px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 89, 193, 0.5) 0%,
+    rgba(13, 0, 123, 0.5) 100%
+  );
+  border: 1px solid rgba(0, 89, 193, 0.5);
+
+  border-radius: 12px;
+}
+
+.pricing-plan__box:not(:nth-child(2n)) {
+  border: none;
+}
+
+.pricing-plan__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing-plan__title h4 {
+  letter-spacing: -0.5px;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.pricing-plan__title p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.pricing-plan__description {
+  padding-top: 30px;
+}
+
+.pricing-plan__description p {
+  letter-spacing: 0.1px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.pricing-plan__btn {
+  display: flex;
+  justify-content: flex-end;
+  vertical-align: bottom;
+}
+
+.pricing-plan__btn-buy {
+  background: #e38b00;
+  width: 93px;
+  height: 40px;
+
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* SECTION CTA */
+
+.form {
+  padding: 32px 593px;
+}
+
+.cta-title p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.cta-form__full-name {
+  display: flex;
+  column-gap: 32px;
+}
+
+.cta-form__label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+
+  background: transparent;
+}
+
+.cta-form__input {
+  height: 57px;
+  width: 350px;
+  /* padding: 12px 0; */
+  background: transparent;
+  outline: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+
+  border: none;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.cta-form__input-email {
+  width: 733px;
+}
+
+.cta-form__input-pass {
+  width: 733px;
+}

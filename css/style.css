@@ -32,6 +32,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header__logo {
+  height: 40px;
+}
 
 .main-nav {
   display: flex;
@@ -73,12 +76,18 @@ body {
 }
 
 .btn-sign {
-  width: 121px;
-  height: 40px;
+  display: inline-block;
+
+  padding: 11px 33.56px;
   background: #0059c1;
+  color: #ffffff;
+
   font-family: inherit;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
+  border-radius: 12px;
+
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
@@ -183,31 +192,32 @@ body {
 
 /* SECTION SCROLL-BAR */
 
-.list {
-  padding-top: 32px;
-  max-width: 1274px;
-  margin: 0 auto;
-}
-
-/* .list-container {
-  width: max-content;
-} */
-
-.list h2 {
+.title-series h2 {
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
+  padding-top: 32px;
   padding-bottom: 24px;
 }
 
+.list {
+  max-width: 1848px;
+  margin: 0 auto;
+}
+
 .scroll {
-  width: max-content;
-  display: flex;
-  column-gap: 24px;
+  padding-left: 287px;
   overflow-x: auto;
 }
 
-#scroll-bar::-webkit-scrollbar {
+.scroll-wrapper {
+  display: flex;
+  column-gap: 24px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.scroll::-webkit-scrollbar {
   display: none;
 }
 
