@@ -104,26 +104,21 @@ button {
 }
 
 .btn-sign {
-  display: inline-block;
-
   padding: 11px 33.56px;
   background: #0059c1;
-  color: #ffffff;
 
-  font-family: inherit;
   text-transform: uppercase;
   text-decoration: none;
-  cursor: pointer;
-  border-radius: 12px;
 
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-sign:hover {
   background: rgba(0, 90, 193, 0.894);
-  transition: all 0.3s ease-in-out;
+
   transform: translateY(-1px);
   box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
 }
@@ -215,7 +210,7 @@ button {
   vertical-align: bottom;
 }
 
-.pricing-plan__btn-buy {
+.pricing-plan__btn-choose {
   background: #e38b00;
   width: 93px;
   height: 40px;
@@ -224,6 +219,12 @@ button {
   font-weight: 900;
   font-size: 18px;
   line-height: 22px;
+  transition: all 0.4s;
+}
+
+.pricing-plan__btn-choose:hover {
+  background-color: transparent;
+  box-shadow: 0 0 0 1px #e38b00;
 }
 
 /* SECTION CTA */
@@ -327,4 +328,26 @@ button {
   line-height: 17px;
 
   color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-create {
+  margin-top: 32px;
+  padding: 11px 338.56px;
+  background: #0059c1;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-create:hover {
+  background: rgba(0, 90, 193, 0.894);
+
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
 }

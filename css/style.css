@@ -91,11 +91,12 @@ body {
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-sign:hover {
   background: rgba(0, 90, 193, 0.894);
-  transition: all 0.3s ease-in-out;
+
   transform: translateY(-1px);
   box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
 }
@@ -182,7 +183,7 @@ body {
   font-size: 15px;
   line-height: 18px;
   padding-left: 10px;
-
+  transition: all 0.3s;
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -330,6 +331,7 @@ body {
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-icon_play {
@@ -338,7 +340,7 @@ body {
 
 .btn-trailer-link:hover {
   background-color: rgba(0, 90, 193, 0.894);
-  transition: all 0.3s ease-in-out;
+
   transform: translateY(-1px);
   box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
 }
@@ -440,12 +442,12 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+  transition: all 0.4s;
 }
 
 .cta-box__btn-buy:hover {
   background-color: transparent;
   box-shadow: 0 0 0 1px #e38b00;
-  transition: all 0.2s;
 }
 
 .cta-box__btn-trial {
@@ -458,9 +460,9 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+  transition: all 0.2s;
 }
 
 .cta-box__btn-trial:hover {
   background: #e38b00;
-  transition: all 0.2s;
 }
