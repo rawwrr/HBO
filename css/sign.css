@@ -207,7 +207,6 @@ button {
 .pricing-plan__btn {
   display: flex;
   justify-content: flex-end;
-  vertical-align: bottom;
 }
 
 .pricing-plan__btn-choose {
@@ -225,6 +224,21 @@ button {
 .pricing-plan__btn-choose:hover {
   background-color: transparent;
   box-shadow: 0 0 0 1px #e38b00;
+}
+
+.pricing-plan__box-annual {
+  position: relative;
+}
+
+.check-mark {
+  position: absolute;
+  top: -4%;
+  right: -2%;
+}
+
+.check-mark__svg {
+  width: 36.67px;
+  height: 36.67px;
 }
 
 /* SECTION CTA */
@@ -271,6 +285,17 @@ button {
 
   border: none;
   border-bottom: 2px solid #d9d9d9;
+
+  transition: all 0.3s;
+}
+
+.cta-form__input:focus {
+  outline: none;
+  border-bottom: 2px solid #e38b00;
+}
+
+.cta-form__input:focus:invalid {
+  border-bottom: 2px solid #ff4c30;
 }
 
 .cta-form__input-email {
@@ -350,4 +375,15 @@ button {
 
   transform: translateY(-1px);
   box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
+}
+
+.privacy-policy__info {
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.privacy-policy__info span {
+  color: #e38b00;
 }
