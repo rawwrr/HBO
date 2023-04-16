@@ -67,7 +67,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 470px;
+  /* width: 470px; */
 }
 
 .main-nav__list {
@@ -80,9 +80,9 @@ button {
   line-height: 16px;
 }
 
-.main-nav__list:last-child {
+/* .main-nav__list:last-child {
   gap: 59px;
-}
+} */
 
 .main-nav__link {
   text-transform: uppercase;
