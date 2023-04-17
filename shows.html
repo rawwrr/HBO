@@ -28,26 +28,438 @@
   </head>
 
   <body>
-    <!-- header -->
-    <header></header>
+    <div class="container">
+      <!-- header -->
 
-    <!-- main -->
-    <main></main>
+      <header class="header">
+        <!-- display: none -->
+        <h1 class="heading-primary">HBO</h1>
+        <!-- display: none -->
 
-    <!-- footer -->
-    <footer>
-      <ion-icon name="mail-outline"></ion-icon>
-      <ion-icon name="call-outline"></ion-icon>
-    </footer>
+        <div class="header__logo">
+          <a href="/">
+            <img
+              src="./img/logo/HBO.png"
+              class="header__logo-img"
+              alt="logo HBO"
+          /></a>
+        </div>
 
-    <!-- script -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li>
+              <a href="#" class="main-nav__link" target="_blank">series</a>
+            </li>
+            <li>
+              <a href="#" class="main-nav__link" target="_blank">movies</a>
+            </li>
+            <li>
+              <a href="./shows.html" class="main-nav__link" target="_blank"
+                >shows</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav__link" target="_blank"
+                >free episodes</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav__link" target="_blank">schedule</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="./sign.html" class="btn btn-sign" target="_blank">sign in</a>
+      </header>
+
+      <!-- main -->
+      <main class="main">
+        <!-- TV Shows title -->
+        <div class="main-title">
+          <h2>TV Shows</h2>
+        </div>
+        <!-- Cards start -->
+        <div class="main-container">
+          <section class="list">
+            <div class="scroll">
+              <div class="scroll-wrapper">
+                <!-- 1 -->
+
+                <div class="card">
+                  <div
+                    class="series"
+                    style="
+                      background-image: url(img/posters/house_of_the_dragon.jpg);
+                    "
+                  ></div>
+
+                  <div class="description">
+                    <div class="score">
+                      <a href="#" class="score__mark">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          class="score__icon_star"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        8.1
+                      </a>
+                      <p>2022</p>
+                    </div>
+
+                    <div class="info">
+                      <p class="info-season">Season 1</p>
+                      <h4>House of the Dragon</h4>
+                      <p class="info-description">
+                        An internal succession war within House Targaryen at the
+                        height of its power, 172 years before the birth of
+                        Daenerys Targaryen.
+                      </p>
+
+                      <div class="btn-trailer">
+                        <a href="#" class="btn-trailer-link">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            class="btn-icon_play"
+                          >
+                            <path
+                              d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"
+                            />
+                          </svg>
+                          watch
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="card">
+                  <div
+                    class="series"
+                    style="
+                      background-image: url(img/posters/house_of_the_dragon.jpg);
+                    "
+                  ></div>
+
+                  <div class="description">
+                    <div class="score">
+                      <a href="#" class="score__mark">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          class="score__icon_star"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        8.1
+                      </a>
+                      <p>2022</p>
+                    </div>
+
+                    <div class="info">
+                      <p class="info-season">Season 1</p>
+                      <h4>House of the Dragon</h4>
+                      <p class="info-description">
+                        An internal succession war within House Targaryen at the
+                        height of its power, 172 years before the birth of
+                        Daenerys Targaryen.
+                      </p>
+
+                      <div class="btn-trailer">
+                        <a href="#" class="btn-trailer-link">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            class="btn-icon_play"
+                          >
+                            <path
+                              d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"
+                            />
+                          </svg>
+                          watch
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="card">
+                  <div
+                    class="series"
+                    style="
+                      background-image: url(img/posters/house_of_the_dragon.jpg);
+                    "
+                  ></div>
+
+                  <div class="description">
+                    <div class="score">
+                      <a href="#" class="score__mark">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          class="score__icon_star"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        8.1
+                      </a>
+                      <p>2022</p>
+                    </div>
+
+                    <div class="info">
+                      <p class="info-season">Season 1</p>
+                      <h4>House of the Dragon</h4>
+                      <p class="info-description">
+                        An internal succession war within House Targaryen at the
+                        height of its power, 172 years before the birth of
+                        Daenerys Targaryen.
+                      </p>
+
+                      <div class="btn-trailer">
+                        <a href="#" class="btn-trailer-link">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            class="btn-icon_play"
+                          >
+                            <path
+                              d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"
+                            />
+                          </svg>
+                          watch
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="card">
+                  <div
+                    class="series"
+                    style="
+                      background-image: url(img/posters/house_of_the_dragon.jpg);
+                    "
+                  ></div>
+
+                  <div class="description">
+                    <div class="score">
+                      <a href="#" class="score__mark">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          class="score__icon_star"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        8.1
+                      </a>
+                      <p>2022</p>
+                    </div>
+
+                    <div class="info">
+                      <p class="info-season">Season 1</p>
+                      <h4>House of the Dragon</h4>
+                      <p class="info-description">
+                        An internal succession war within House Targaryen at the
+                        height of its power, 172 years before the birth of
+                        Daenerys Targaryen.
+                      </p>
+
+                      <div class="btn-trailer">
+                        <a href="#" class="btn-trailer-link">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            class="btn-icon_play"
+                          >
+                            <path
+                              d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"
+                            />
+                          </svg>
+                          watch
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="card">
+                  <div
+                    class="series"
+                    style="
+                      background-image: url(img/posters/house_of_the_dragon.jpg);
+                    "
+                  ></div>
+
+                  <div class="description">
+                    <div class="score">
+                      <a href="#" class="score__mark">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          class="score__icon_star"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        8.1
+                      </a>
+                      <p>2022</p>
+                    </div>
+
+                    <div class="info">
+                      <p class="info-season">Season 1</p>
+                      <h4>House of the Dragon</h4>
+                      <p class="info-description">
+                        An internal succession war within House Targaryen at the
+                        height of its power, 172 years before the birth of
+                        Daenerys Targaryen.
+                      </p>
+
+                      <div class="btn-trailer">
+                        <a href="#" class="btn-trailer-link">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            class="btn-icon_play"
+                          >
+                            <path
+                              d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"
+                            />
+                          </svg>
+                          watch
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 6 -->
+
+                <div class="card">
+                  <div
+                    class="series"
+                    style="
+                      background-image: url(img/posters/house_of_the_dragon.jpg);
+                    "
+                  ></div>
+
+                  <div class="description">
+                    <div class="score">
+                      <a href="#" class="score__mark">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          class="score__icon_star"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        8.1
+                      </a>
+                      <p>2022</p>
+                    </div>
+
+                    <div class="info">
+                      <p class="info-season">Season 1</p>
+                      <h4>House of the Dragon</h4>
+                      <p class="info-description">
+                        An internal succession war within House Targaryen at the
+                        height of its power, 172 years before the birth of
+                        Daenerys Targaryen.
+                      </p>
+
+                      <div class="btn-trailer">
+                        <a href="#" class="btn-trailer-link">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            class="btn-icon_play"
+                          >
+                            <path
+                              d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"
+                            />
+                          </svg>
+                          watch
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Cards end -->
+
+        <!-- Movies -->
+        <div class="main-title">
+          <h2>Movies</h2>
+        </div>
+
+        <!-- Cartoons -->
+        <div class="main-title">
+          <h2>Cartoons</h2>
+        </div>
+        <!-- Movies title -->
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+        <ion-icon name="mail-outline"></ion-icon>
+        <ion-icon name="call-outline"></ion-icon>
+      </footer>
+
+      <!-- scripts -->
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+    </div>
   </body>
 </html>

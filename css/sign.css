@@ -47,10 +47,6 @@ button {
   background-size: cover;
 }
 
-.heading-primary {
-  display: none;
-}
-
 /* SECTION HEADER */
 .header {
   display: flex;
